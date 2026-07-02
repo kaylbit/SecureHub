@@ -66,7 +66,7 @@ class UserRepository:
  
 
   @staticmethod
-  def register_user(username, password):
+  def register_user(username, password, role):
     uname = username
     pword = password
 
@@ -78,18 +78,14 @@ class UserRepository:
     try:
       cursor.execute("""
         INSERT INTO users(username, password, role) VALUES(?,?,?)
-      """, (uname, pass_hash, "user"))
+      """, (uname, pass_hash, role))
 
       conn.commit()
 
-      return jsonify({
-        "success": True
-      }), 200
+      return True
     
     except sqlite3.IntegrityError:
-      return jsonify({
-        "success": False
-      }), 401
+      return False
     
     finally:
       conn.close()
