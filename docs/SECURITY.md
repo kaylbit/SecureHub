@@ -236,5 +236,5 @@ Current assessment includes:
 Assessment results are documented separately in:
 
 ```
-docs/PENTEST.md
+pentest/
 ```
