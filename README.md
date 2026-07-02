@@ -84,6 +84,40 @@ This separation keeps business logic independent from routing and data access, m
 
 ---
 
+## Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/kaylbit/SecureHub.git
+
+cd SecureHub
+```
+
+Install the dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application.
+
+```bash
+python app.py
+```
+
+---
+
+## Default Administrator
+
+When the application is started for the first time, SecureHub automatically creates a default administrator account if one does not already exist.
+
+| Username | Password   |
+| -------- | ---------- |
+| `admin`  | `admin123` |
+
+---
+
 ## Security Controls
 
 - JWT Authentication
