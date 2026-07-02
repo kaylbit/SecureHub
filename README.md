@@ -162,11 +162,6 @@ Topics include:
 - API3 – Broken Object Property Level Authorization
 - API4 – Unrestricted Resource Consumption
 - API5 – Broken Function Level Authorization
-- API6 – Unrestricted Access to Sensitive Business Flows
-- API7 – Server-Side Request Forgery (SSRF)
-- API8 – Security Misconfiguration
-- API9 – Improper Inventory Management
-- API10 – Unsafe Consumption of APIs
 
 ---
 
