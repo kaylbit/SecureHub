@@ -15,6 +15,10 @@ class DatabaseInit:
         locked_until INTEGER DEFAULT 0
     )
     """)
+    admin = UserService.find_user("admin")
+
+    if not admin:
+      UserService.register_user("admin", "admin123", "admin")
 
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS refresh_tokens(
