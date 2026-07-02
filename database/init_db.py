@@ -1,5 +1,6 @@
 import sqlite3
 from database.db import DbConnect
+from services.user_service import UserService
 
 class DatabaseInit:
   def db_init():
