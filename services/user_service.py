@@ -14,8 +14,8 @@ class UserService:
     return UserRepository.update_user(user_id, username)
   
   @staticmethod
-  def register_user(username, password):
-    return UserRepository.register_user(username, password)
+  def register_user(username, password, role):
+    return UserRepository.register_user(username, password, role)
   
   @staticmethod
   def get_all_user():
