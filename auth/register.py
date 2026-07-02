@@ -22,7 +22,7 @@ def register():
         "error": "Password must be at least 8 characters long"
       }), 400
     
-    result = UserService.register_user(username, password)
+    result = UserService.register_user(username, password, "user")
 
     if not result == True:
         return jsonify({"error": "Username already exists"}), 400
