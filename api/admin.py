@@ -12,7 +12,7 @@ admin_api = Blueprint("admin_api", __name__)
 @require_admin
 def admin():
     users = UserService.get_all_user()
-    AuditService.create_log(g.user.id, "GET_USERS", "/adpi/admin")
+    AuditService.create_log(g.user.id, "GET_USERS", "/api/admin")
     
     return jsonify(users)
 
